@@ -18,19 +18,22 @@
   }
   .bustello { 
    	border: 3px solid red;
-    width: 200px;
+    width: 180px;
     height: 230px;
     background-color : yellow;
   }
   .left-bustello {
     position: absolute; 
     top: 200px; 
-    left: 50px; 
+    left: 200px; 
+    z-index: -1;
+    border-radius: 20%;
   }
   .right-bustello {
     position: absolute; 
     top: 200px; 
-    left: 300px; 
+    left: 350px; 
+    border-radius: 20%;
   }
   .cup {
     border: 1px solid black;
@@ -39,18 +42,21 @@
   }
   .top-cup {
     position: absolute; 
-    top: 200px;
-    left: 50px
+    top: 110px;
+    left: 230px;
+    border-radius: 30%;
   }
   .bottom-cup {
     position: absolute; 
-    top: 5px;
-    left: 50px
+    top: 350px;
+    left: 160px;
+    border-radius: 30%;
   }
   .middle-cup {
     position: absolute; 
-    top: 100px;
-    left: 50px
+    top: 258px;
+    left: 160px;
+    border-radius: 30%;
   }
   .triangle { 
     width: 50%;
@@ -58,31 +64,48 @@
     background-color: red; 
     position: absolute;
     clip-path: polygon(0 0, 0% 100%, 100% 50%);
-    transform: translate(0px, 5%)
+    transform: translate(0px, 5%);
+    border-radius: 30%;
   }
   .star { 
-  	background-color : white ;
+  	background-color: white ;
   	width: 45%; 
   	height: 25%; 
-    position : relative;
+    position: relative;
   	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%,
       79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
   	transform: translate(-15%, 29px)
+  
   }
   .stripes { 
-  	background-image: linear-gradient(#0f00e6 37%, #ffffff 75%);
+  	background-image: linear-gradient(#0f00e6 50%, #ffffff 50%);
     background-size: 100% 40%; 
-    width: 90%; 
-    height: 90%; 
+    width: 100%; 
+    height: 100%; 
     position: absolute; 
     top: -0px; 
-    left : 7px; 
+    left: 0px; 
     z-index: -1;
+    border-radius: 30%;
+  }
+  
+  .orangetop { 
+  background-image: linear-gradient(to right, #eb640a 0%, #ac2c02 100%);  border: 1px solid: black ; 
+  
+  width: 250px ; 
+  height : 250px; 
+  position : absolute; 
+  top: -150px; 
+  left: -160px; 
+  z-index: -3;
+    
+  
+    
   }
     
       
       
-  }
+  
 </style>
 <body>
   
@@ -105,6 +128,11 @@
   <div class="cup middle-cup">
   	<div class="triangle"></div>
     	<div class="star"></div>
-  	<div class="stripes"></div>
+  	<div class="stripes">
+    </div>
+  <div class="silverbottom">
+    </div>
+  <div class="orangetop">
+    </div>
   </div>
 </div>
